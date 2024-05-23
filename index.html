@@ -67,7 +67,7 @@
                 let c=5;
                 while(c-->0)
                     playRound(getHumanChoice(),getComputerChoice());
-                return((humanScore>computerScore)?"You won!":"You lost!");
+                return((humanScore==computerScore)?"Tie!":(humanScore>computerScore)?"You won!":"You lost!");
             }
         console.log(playGame());
     </script>
